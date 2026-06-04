@@ -1,6 +1,6 @@
 {
   "name": "cache-reaper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Obliterate hidden application caches across your entire system.",
   "main": "index.js",
   "scripts": {
