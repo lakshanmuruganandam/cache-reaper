@@ -24,7 +24,8 @@ const banner = `
 `;
 
 console.log(pc.magenta(banner));
-console.log(pc.gray('    Sweep the hidden garbage.\n'));
+console.log(pc.gray('    Sweep the hidden garbage.'));
+console.log(pc.dim('    Architected by @lakshanmuruganandam\n'));
 
 const checkCli = (cmd) => {
   try {
@@ -48,7 +49,6 @@ const availableCaches = caches.filter(c => checkCli(c.check));
 
 if (availableCaches.length === 0) {
   console.log(pc.green('✨ No supported package managers found on this system. You are clean.'));
-  console.log(pc.cyan('\nArchitected by @lakshanmuruganandam\n'));
   process.exit(0);
 }
 
@@ -70,7 +70,6 @@ const run = async () => {
 
   if (selected.length === 0) {
     console.log(pc.gray('\nMission aborted. No caches cleared.'));
-    console.log(pc.cyan('\nArchitected by @lakshanmuruganandam\n'));
     process.exit(0);
   }
 
@@ -83,7 +82,6 @@ const run = async () => {
 
   if (!confirm) {
     console.log(pc.gray('\nMission aborted.'));
-    console.log(pc.cyan('\nArchitected by @lakshanmuruganandam\n'));
     process.exit(0);
   }
 
@@ -106,8 +104,6 @@ const run = async () => {
       { padding: 1, margin: { top: 1 }, borderStyle: 'round', borderColor: 'green' }
     )
   );
-
-  console.log(pc.cyan('\nArchitected by @lakshanmuruganandam\n'));
 };
 
 run().catch(e => {
