@@ -1,14 +1,23 @@
 {
   "name": "cache-reaper",
   "version": "1.0.4",
-  "description": "",
+  "description": "Obliterate hidden application caches across your entire system.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cache",
+    "cleanup",
+    "cli",
+    "reaper",
+    "npm-cache",
+    "yarn-cache",
+    "brew",
+    "mac"
+  ],
+  "author": "Lakshan Muruganandam <lakshan@example.com>",
+  "license": "MIT",
   "dependencies": {
     "boxen": "^8.0.1",
     "cli-spinners": "^3.4.0",
